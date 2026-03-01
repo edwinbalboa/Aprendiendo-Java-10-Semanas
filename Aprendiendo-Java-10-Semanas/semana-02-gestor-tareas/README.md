@@ -11,29 +11,9 @@ Este proyecto consiste en un Sistema de Gestión de Tareas desarrollado en Java 
  * Borrado físico de tareas de la lista por ID.
  * Reporte del total de tareas, conteo por estado y cálculo del porcentaje de progreso.
  * Menú interactivo basado en Scanner que se repite hasta que el usuario decide salir.
-3. Diagrama de Clases
 
-A continuación se muestra la relación entre las clases principales del sistema:
-+---------------------------+          +------------------------------+
-|      modelo.Tarea         |          |   servicio.GestorTareas      |
-+---------------------------+          +------------------------------+
-| - id: int                 |          | - tareas: ArrayList<Tarea>   |
-| - titulo: String          |          | - proximoId: int             |
-| - descripcion: String     |          +------------------------------+
-| - estado: String          |          | + agregar(tit, desc): void   |
-+---------------------------+          | + listar(filtro): void       |
-| + completar(): void       | <------- | + completarTarea(id): void   |
-| + mostrarInfo(): void     |          | + eliminar(id): void         |
-| + estaCompletada(): bool  |          | + mostrarEstadisticas(): void|
-+---------------------------+          +------------------------------+
-            ^
-            |
-      (Usa la clase)
-            |
-      +-------------+
-      |    Main     |
-      +-------------+
-      | + main()    |
-      +-------------+
+
+      
+
 
 
