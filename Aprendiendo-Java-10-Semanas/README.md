@@ -12,7 +12,7 @@ Repositorio del curso Java .
 
 |    2   | POO Fundamentos              | semana -02 - gestor - tareas / |
 
-|    3   | POO Fundamentos-2da parte    | semana -02 - vehiculos - poo / |
+|    3   | POO Fundamentos-2da parte    | semana -03 - vehiculos - poo / |
 
 
 ## Autor
