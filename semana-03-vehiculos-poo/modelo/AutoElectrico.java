@@ -1,0 +1,16 @@
+package modelo;
+public class AutoElectrico extends Auto implements Electrico {
+    private int nivelBateria;
+    public AutoElectrico(String marca, String modelo, int anio, int puertas, int bateria) {
+        super(marca, modelo, anio, puertas);
+        this.nivelBateria = bateria;
+    }
+    @Override public void cargarBateria() { this.nivelBateria = 100; }
+    @Override public int getNivelBateria() { return nivelBateria; }
+    @Override public boolean necesitaCarga() { return nivelBateria < 20; }
+    @Override
+    public void acelerar() {
+        nivelBateria -= 5;
+        System.out.println(marca + " (auto eléctrico) acelera en silencio. Batería: " + nivelBateria + "%");
+    }
+}
