@@ -1,18 +1,5 @@
 1. Descripción del Sistema
 Este sistema es una plataforma de gestión de flotas que permite registrar, listar y controlar diversos tipos de vehículos, incluyendo modelos de combustión y eléctricos. Utiliza los pilares de la POO para aplicar comportamientos específicos (como la aceleración o la carga de batería) de forma uniforme a través de una jerarquía de clases y una interfaz compartida.
-2. Diagrama de Clases
-       [ Vehiculo ] (Clase Abstracta)
-             |
-    ---------------------------------
-    |               |               |
- [ Auto ]        [ Moto ]       [ Camion ]
-    ^               ^
-    |               |
-[ AutoElectrico ] [ MotoElectrica ]
-    |               |
-    ---------------------------------
-             |
-      << Electrico >> (Interfaz)
 
 3. Decisiones de Diseño
  * ¿Por qué Vehiculo es una clase abstracta?
